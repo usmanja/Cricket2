@@ -58,7 +58,7 @@ jobs:
         run: yes | npx playwright install-deps || true
         
       - name: Install Node.js packages
-        run: npm install axios cheerio playwright-core recaptcha-solver chokidar puppeteer adm-zip wrangler@latest
+        run: npm install @playwright/test axios cheerio playwright-core recaptcha-solver chokidar puppeteer adm-zip wrangler@latest
         
       - name: Install Playwright browsers
         run: yes | npx playwright install || true
